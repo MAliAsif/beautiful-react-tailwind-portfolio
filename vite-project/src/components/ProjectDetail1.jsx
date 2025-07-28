@@ -20,17 +20,24 @@ Designed a real-time embedded IoT system enabling direct, low-latency wireless c
         <div>
           <h2 className="font-semibold text-lg">Problem Statement</h2>
           <p className="text-justify">
-            Most vehicles in Pakistan lack connectivity with nearby vehicles and infrastructure, resulting in limited access to real-time traffic and safety data. This absence of vehicle-to-vehicle (V2V) and vehicle-to-infrastructure (V2I) communication increases the risk of accidents and reduces driving efficiency.
+Most vehicles in Pakistan can't communicate with each other or nearby infrastructure. This makes it hard to get real-time traffic and safety updates, increasing the chances of accidents.
+
           </p>
         </div>
         <div>
           <h2 className="font-semibold text-lg">Proposed Solution</h2>
           <p className="text-justify">
-            We have developed a V2X communication prototype integrating ESP32-based vehicle nodes and a Raspberry Pi-powered RSU, enabling real-time sharing of GPS and acceleration data. Traffic and vehicle data is wirelessly shared via LoRa and OFDM links to improve driver awareness, safety, and enable intelligent transport integration.
-          </p>
+We built a V2X system using ESP32 devices in vehicles and a Raspberry Pi at the roadside. It shares GPS and motion data in real-time using wireless links to improve road safety and traffic awareness.
+     </p>
  <h2 className="font-semibold text-lg mt-6">Architecture Diagram</h2>
  <p className="text-justify">
-  Our system comprises of 3 vehicle nodes, RSU (Road Side Unit) node, and a back haul link for gathering all the data at one place for future usecases. Each vehicle node exchanges gps coordinates, acceleration/speed data with other, as well as receives traffic updates from RSU node. Data gathered at RSU node is modulated and send to the back haul link. 
+  Our V2X system comprises of: 
+    <ul className="list-disc list-inside mt-1 ml-4 text-sm">
+  <li><span className="font-semibold">3 vehicle nodes</span> for exchange of gps, acceleration/speed data, alerting the driver based on this data </li>
+  <li><span className="font-semibold">RSU (Road Side Unit) node</span> for transmitting traffic updates </li>
+  <li><span className="font-semibold">A Back haul link </span> for gathering all the data at one place</li>
+</ul>
+  
   </p>
 <img
   src="/proj1Data/Capture.PNG"
@@ -164,14 +171,14 @@ The Node 2 and 3 are intermediate nodes, which accurately relay packets , until 
   />
 <div className="mt-6 text-center space-y-4">
   {/* Result Videos Link */}
-  <a
+  {/* <a
     href="https://drive.google.com/your-result-video-link"
     target="_blank"
     rel="noopener noreferrer"
     className="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
   >
     Watch Result Videos
-  </a>
+  </a> */}
 
   {/* Thesis Report Link */}
   <br />

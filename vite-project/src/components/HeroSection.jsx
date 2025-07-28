@@ -23,8 +23,7 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-           I create embedded systems and IoT solutions specializing in low‑power wireless communication and efficient firmware development.
-          </p>
+Skilled in developing embedded systems and IoT applications with a focus on low-power wireless communication and efficient firmware          </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
             <a href="#projects" className="cosmic-button">
