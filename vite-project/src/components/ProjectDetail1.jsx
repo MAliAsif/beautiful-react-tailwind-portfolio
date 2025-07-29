@@ -92,6 +92,8 @@ Similarly the PCB units for Node 2 and Node 3 have been fabricated and used in t
 
 />
 
+
+
  <h2 className="font-semibold text-lg mt-6">Complete Hardware</h2>
   <img
   src="/proj1Data/complete_hardware.jpg"
